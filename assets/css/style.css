@@ -1,0 +1,1117 @@
+* {
+  margin: 0;
+}
+/* HEADER */
+header {
+  height: fit-content;
+  width: 85vw;
+  /* background-color: #545e6c; */
+
+  margin-left: 70px;
+  z-index: 1999;
+  position: fixed;
+  top: 3;
+  left: 0;
+  right: 0;
+}
+header .nav ul {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: arial;
+  font-size: 20px;
+  margin: 40px;
+}
+header .nav ul li {
+  list-style-type: none;
+}
+header .nav a {
+  text-decoration: none;
+  color: white;
+}
+/* HERO   */
+.hero {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  color: rgb(242, 237, 240);
+  font-family: sans-serif;
+  background-image: url(../images/wildhero.jpg);
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 14, 14, 0.797);
+}
+
+.hero .hero-content {
+  z-index: 1999;
+  position: absolute;
+  top: 35vh;
+  left: 20vw;
+}
+.hero .hero-content h5 {
+  color: darkkhaki;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1cm;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.hero .hero-content h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 43%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.hero .hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1cm;
+  font-weight: 100;
+  margin-bottom: 10px;
+  width: 50%;
+}
+.hero .hero-content h6 {
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.hero .hero-content h6 i {
+  font-size: 30px;
+  font-weight: 100;
+}
+.hero .hero-content .story {
+  margin-top: 40px;
+  background-color: rgb(3, 32, 54);
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 40px;
+}
+.hero .hero-content .story h4 {
+  color: darkkhaki;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 100;
+}
+.hero .hero-content .story .sub-story {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.hero .hero-content .story .sub-story .story-img1 {
+  background-image: url(../images/story1.jpg);
+  height: 120px;
+  width: 190px;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+.hero .hero-content .story .sub-story .story-img2 {
+  background-image: url(../images/Screenshot\ 2024-10-25\ at\ 11.07.07.png);
+  height: 120px;
+  width: 190px;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+.hero .hero-content .story .sub-story .story-img3 {
+  background-image: url(../images/story2.jpg);
+  height: 120px;
+  width: 190px;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+.hero .hero-content .story p {
+  font-size: 10px;
+  width: 70%;
+  line-height: 15px;
+  margin-left: 10px;
+}
+.hero .hero-content .story .sub-story h6 {
+  color: darkkhaki;
+  margin-left: 10px;
+}
+/* PANDA HERO */
+.p-hero {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  color: rgb(242, 237, 240);
+  font-family: sans-serif;
+  background-image: url(../images/panda-hero.jpg);
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+.p-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 14, 14, 0.797);
+}
+
+.p-hero .hero-content {
+  z-index: 1999;
+  position: absolute;
+  top: 35vh;
+  left: 30vw;
+}
+.p-hero .hero-content h1 {
+  color: green;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: system-ui;
+  letter-spacing: 6px;
+}
+.p-hero .hero-content h4 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+.p-hero .hero-content h6 {
+  color: green;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: system-ui;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+.p-hero .hero-content p i {
+  color: green;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: system-ui;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-left: 110px;
+}
+/* SERA-HERO  */
+.s-hero {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  color: rgb(242, 237, 240);
+  font-family: sans-serif;
+  background-image: url(../images/sera-hero.jpg);
+  height: 100vh;
+  width: 100vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+.s-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 14, 14, 0.797);
+}
+
+.s-hero .hero-content {
+  z-index: 1999;
+  position: absolute;
+  top: 35vh;
+  left: 30vw;
+}
+.s-hero .hero-content h1 {
+  color: green;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: system-ui;
+  letter-spacing: 6px;
+}
+.s-hero .hero-content h4 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+.s-hero .hero-content h6 {
+  color: green;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: system-ui;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+.s-hero .hero-content p i {
+  color: green;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: system-ui;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-left: 110px;
+}
+/* RUDI-HERO  */
+.r-hero {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  color: rgb(242, 237, 240);
+  font-family: sans-serif;
+  background-image: url(../images/rudi-hero.jpg);
+  height: 100vh;
+  width: 100vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+.r-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 14, 14, 0.797);
+}
+
+.r-hero .hero-content {
+  z-index: 1999;
+  position: absolute;
+  top: 35vh;
+  left: 30vw;
+}
+.r-hero .hero-content h1 {
+  color: green;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: system-ui;
+  letter-spacing: 6px;
+}
+.r-hero .hero-content h4 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: system-ui;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+.r-hero .hero-content h6 {
+  color: green;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: system-ui;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+.r-hero .hero-content p i {
+  color: green;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: system-ui;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-left: 110px;
+}
+/* WHO WE ARE */
+.wwa {
+  height: fit-content;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.wwa .body {
+  margin-left: 50px;
+}
+.wwa .body h1 {
+  font-size: 45px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: darkgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wwa .body h4 {
+  color: rgb(55, 53, 53);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 100;
+  font-family: arial;
+}
+.wwa .body p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 0.8cm;
+  font-weight: 100;
+  margin-bottom: 10px;
+  width: 50%;
+}
+.wwa .wwa-img {
+  background-image: url(../images/who-we-are.jpg);
+  height: 40vh;
+  width: 50vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-right: 50px;
+}
+/* MISSION  */
+.mission {
+  height: fit-content;
+  width: 90vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.mission .m-body {
+  margin-left: 50px;
+}
+.mission .m-body h1 {
+  font-size: 45px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  text-transform: capitalize;
+  color: darkgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mission .m-body h4 {
+  color: rgb(73, 72, 72);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+.mission .m-body p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 0.8cm;
+  font-weight: 100;
+  margin-bottom: 10px;
+  width: 60%;
+}
+.mission .m-body h6 {
+  color: rgb(212, 203, 81);
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+ul li {
+  font-size: 15px;
+  width: 60%;
+  margin-top: 10px;
+  font-family: arial;
+  list-style-type: circle;
+  font-weight: 100;
+}
+
+.mission .mission-img {
+  background-image: url(../images/mission.jpg);
+  height: 40vh;
+  width: 50vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-right: 50px;
+}
+/* RUDI MISSION */
+.r-mission {
+  height: auto;
+  width: 100vw;
+  padding: 50px;
+  margin-left: 50px;
+}
+.r-mission h1 {
+  text-transform: capitalize;
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: system-ui;
+  margin-left: 50px;
+}
+.r-mission p {
+  width: 60%;
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 0.8cm;
+  font-weight: 600;
+  margin-left: 50px;
+}
+/* PANDA BODY  */
+.panda-body {
+  height: 20vh;
+  padding: 50px;
+  margin-left: 70px;
+}
+.panda-body h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: rgb(30, 29, 29);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.panda-body p {
+  width: 90%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 0.5cm;
+  color: rgb(57, 56, 56);
+}
+/* SERA-BODY */
+.sera-body {
+  height: fit-content;
+  padding: 50px;
+  margin: 50px;
+  margin-left: 70px;
+}
+.sera-body h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: rgb(30, 29, 29);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sera-body p {
+  width: 90%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 0.5cm;
+  color: rgb(57, 56, 56);
+}
+.sera-img {
+  background-image: url(../images/sera1.jpg);
+  height: 50vh;
+  width: 60vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  border-radius: 5px;
+}
+/* RUDI STORY */
+.rudi-story {
+  height: 150vh;
+  padding: 50px;
+  margin: 50px;
+  margin-left: 70px;
+}
+.rudi-story h1 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: rgb(30, 29, 29);
+  font-family: system-ui;
+}
+.rudi-story p {
+  width: 90%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 0.5cm;
+  color: rgb(57, 56, 56);
+}
+
+.rudi-img {
+  background-image: url(../images/rudi1.jpg);
+  height: 50vh;
+  width: 60vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  position: absolute;
+}
+.rudi-img1 {
+  background-image: url(../images/rudi3.jpg);
+  height: 80vh;
+  width: 30vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  position: relative;
+  top: 5vh;
+  left: 6vw;
+}
+.rudi-img2 {
+  background-image: url(../images/rudi2.jpg);
+  height: 40vh;
+  width: 30vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  position: relative;
+  bottom: 18vh;
+  left: 3vw;
+}
+.rudi-img3 {
+  background-image: url(../images/rudi4.jpg);
+  height: 40vh;
+  width: 30vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  position: relative;
+  bottom: 50vh;
+  left: 28vw;
+}
+.rudi-img4 {
+  background-image: url(../images/rudi6.png);
+  height: 40vh;
+  width: 40vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  position: relative;
+  bottom: 135vh;
+  left: 28vw;
+}
+/* PURPOSE  */
+.purpose {
+  height: fit-content;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+.purpose .p-body {
+  margin-left: 50px;
+}
+.purpose .p-body h1 {
+  font-size: 45px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  text-transform: capitalize;
+  color: darkgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.purpose .p-body h4 {
+  color: rgb(73, 71, 71);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+.purpose .p-body p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 0.8cm;
+  font-weight: 100;
+  margin-bottom: 10px;
+  width: 50%;
+}
+.purpose .objective-img {
+  background-image: url(../images/objective.jpg);
+  height: 40vh;
+  width: 50vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-right: 50px;
+}
+
+h5 {
+  color: rgb(247, 238, 216);
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+h5 i {
+  color: rgb(237, 172, 7);
+  font-size: xx-large;
+}
+/* PANDA MITI  */
+.panda-miti {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  margin-left: 70px;
+}
+.panda-miti h1 {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.panda-miti h1 span {
+  text-decoration: underline 5px rgb(24, 104, 165);
+}
+.panda-miti p {
+  font-size: 10px;
+  color: rgb(92, 89, 89);
+  width: 60%;
+  margin-bottom: 10px;
+}
+.panda-miti button {
+  background-color: rgba(6, 55, 93, 0.916);
+  color: white;
+  text-transform: capitalize;
+  height: 30px;
+  width: fit-content;
+  border: none;
+  border-radius: 3px;
+}
+.panda-miti .miti-img {
+  background-image: url(../images/panda1.jpg);
+  height: 40vh;
+  width: 20vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.panda-miti .miti-right {
+  margin-left: 50px;
+  width: 50%;
+}
+.panda-miti .miti-right p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: black;
+  margin-top: 20px;
+}
+/* OUR TEAMS */
+.team {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+
+.team h1 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  margin-left: 50px;
+}
+.team h1 span {
+  text-decoration: underline 5px orange;
+}
+.team p {
+  font-size: 10px;
+  color: rgb(92, 89, 89);
+  width: 40%;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+.team button {
+  background-color: rgba(6, 55, 93, 0.916);
+  color: white;
+  text-transform: capitalize;
+  height: 30px;
+  width: fit-content;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.team .team-img {
+  background-image: url(../images/panda2.jpg);
+  height: 40vh;
+  width: 20vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.team .team-proj {
+  margin-right: 50px;
+}
+.team .team-proj p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 0.7cm;
+  color: black;
+  margin-top: 20px;
+  width: 50%;
+}
+.team .team-proj ul {
+  margin-left: 50px;
+}
+/* SAVE ENERGY  */
+.save {
+  height: fit-content;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  margin-left: 70px;
+  margin-bottom: 40px;
+}
+
+.save h1 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  margin-left: 50px;
+}
+.save h1 span {
+  text-decoration: underline 5px rgba(6, 55, 93, 0.916);
+}
+.save p {
+  font-size: 10px;
+  color: rgb(92, 89, 89);
+  width: 40%;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+.save button {
+  background-color: rgba(6, 55, 93, 0.916);
+  color: white;
+  text-transform: capitalize;
+  height: 30px;
+  width: fit-content;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.save .img1 {
+  background-image: url(../images/panda3.jpg);
+  height: 40vh;
+  width: 30vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  position: absolute;
+}
+.save .img2 {
+  background-image: url(../images/panda4.jpg);
+  height: 40vh;
+  width: 20vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  position: relative;
+  top: 10vh;
+  left: 22vw;
+}
+/* LAWS */
+.laws {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin-left: 70px;
+}
+
+.laws h1 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+.laws h1 span {
+  text-decoration: underline 5px orange;
+}
+.laws p {
+  font-size: 13px;
+  color: rgb(92, 89, 89);
+  width: 60%;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+.laws button {
+  background-color: rgba(6, 55, 93, 0.916);
+  color: white;
+  text-transform: capitalize;
+  height: 30px;
+  width: fit-content;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.laws .law-right {
+  margin-left: 50px;
+}
+.laws .law-right p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 0.7cm;
+  color: black;
+  margin-top: 20px;
+  width: 40%;
+  margin-left: 40px;
+}
+.law-img {
+  background-image: url(../images/sera2.jpg);
+  height: 40vh;
+  width: 30vw;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+/* REVIEWS */
+.reviews {
+  height: auto;
+  width: 100vw;
+  padding: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(218, 236, 236);
+}
+.reviews h1 {
+  font-weight: 200;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  margin-left: 80px;
+}
+.reviews p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 35%;
+  margin-left: 80px;
+}
+.reviews .petitions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 80px;
+  color: white;
+}
+
+.reviews .petitions .review-img {
+  height: 40vh;
+  width: 20vw;
+  border-radius: 5px;
+  margin-top: 30px;
+  position: absolute;
+}
+.reviews .petitions h1 {
+  position: relative;
+  top: 12vh;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.reviews .petitions p {
+  position: relative;
+  top: 12vh;
+  font-size: 15px;
+  width: 60%;
+  font-weight: 600;
+}
+.reviews .petitions .i {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black; */
+}
+.reviews .petitions .i i {
+  position: relative;
+  top: 12vh;
+  left: 8vw;
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+}
+/* FOOTER  */
+footer {
+  height: 53vh;
+  width: 60vw;
+  background-color: rgba(232, 229, 229, 0.909);
+  padding: 70px;
+  margin-left: 100px;
+  position: absolute;
+}
+footer .box::after {
+  position: relative;
+  top: 13.5vh;
+  right: 5vw;
+  content: "";
+  border-top: 70vh solid rgb(3, 32, 54);
+  border-right: 70vw solid transparent;
+  width: 0;
+}
+footer .box .contact {
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  z-index: 1999;
+  position: relative;
+  top: 7vh;
+  right: 8vw;
+  padding: 20px;
+  margin-right: 70px;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+  margin-top: 50px;
+  text-transform: capitalize;
+  color: gray;
+  letter-spacing: 2px;
+}
+footer h3 span {
+  color: black;
+}
+.contact p {
+  margin-top: 10px;
+  color: gray;
+  margin-bottom: 5px;
+}
+.contact p i {
+  color: rgb(3, 32, 54);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.contact .socials {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+.contact .socials i {
+  color: rgb(3, 32, 54);
+  font-size: 20px;
+}
+footer .message {
+  height: 43vh;
+  width: 40vw;
+  z-index: 199;
+  background-color: white;
+  position: relative;
+  top: 10vh;
+  left: 5vw;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .message .form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  /* margin-top: 20px; */
+}
+footer .message .form .input {
+  border: solid 1px rgb(210, 208, 208);
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+footer button {
+  background-color: rgb(3, 32, 54);
+  color: white;
+  text-transform: capitalize;
+  height: 30px;
+  width: fit-content;
+  border: none;
+}
