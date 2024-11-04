@@ -1,6 +1,47 @@
 * {
   margin: 0;
 }
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+/* @media (min-width: 475px) {
+  header {
+    max-width: 475px;
+  }
+}
+@media (min-width: 640px) {
+  header {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  header {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  header {
+    max-width: 1536px;
+  }
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+} */
 /* HEADER */
 header {
   height: fit-content;
@@ -23,6 +64,18 @@ header .nav ul {
   font-size: 20px;
   margin: 40px;
 }
+@media (max-width: 600px) {
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 780px) {
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
 header .nav ul li {
   list-style-type: none;
 }
@@ -44,6 +97,7 @@ header .nav a {
   background-position: center;
   background-size: cover;
 }
+
 .hero::before {
   content: "";
   position: absolute;
@@ -99,14 +153,15 @@ header .nav a {
 .hero .hero-content .story {
   margin-top: 40px;
   background-color: rgb(3, 32, 54);
-  height: fit-content;
-  width: fit-content;
+  height: 30%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-right: 40px;
 }
+
 .hero .hero-content .story h4 {
   color: darkkhaki;
   margin-top: 10px;
@@ -362,13 +417,14 @@ header .nav a {
 }
 /* WHO WE ARE */
 .wwa {
-  height: fit-content;
+  height: auto;
   width: 90vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
 }
+
 .wwa .body {
   margin-left: 50px;
 }
@@ -407,13 +463,31 @@ header .nav a {
 }
 /* MISSION  */
 .mission {
-  height: fit-content;
+  height: auto;
   width: 90vw;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
+}
+@media (max-width: 600px) {
+  .mission,
+  .wwa,
+  .panda-miti,
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .mission,
+  .wwa,
+  .panda-miti,
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .mission .m-body {
   margin-left: 50px;
@@ -433,8 +507,7 @@ header .nav a {
   margin-bottom: 10px;
   font-size: 32px;
   font-weight: 100;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui;
   letter-spacing: 3px;
   text-transform: capitalize;
 }
@@ -496,7 +569,7 @@ ul li {
 }
 /* PANDA BODY  */
 .panda-body {
-  height: 20vh;
+  height: auto;
   padding: 50px;
   margin-left: 70px;
 }
@@ -517,7 +590,7 @@ ul li {
 }
 /* SERA-BODY */
 .sera-body {
-  height: fit-content;
+  height: auto;
   padding: 50px;
   margin: 50px;
   margin-left: 70px;
@@ -640,13 +713,25 @@ ul li {
 }
 /* PURPOSE  */
 .purpose {
-  height: fit-content;
+  height: auto;
   width: 90vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
   margin-bottom: 50px;
+}
+@media (max-width: 600px) {
+  .purpose {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 780px) {
+  .purpose {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .purpose .p-body {
   margin-left: 50px;
@@ -702,7 +787,7 @@ h5 i {
 }
 /* PANDA MITI  */
 .panda-miti {
-  height: fit-content;
+  height: auto;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -756,7 +841,7 @@ h5 i {
 }
 /* OUR TEAMS */
 .team {
-  height: fit-content;
+  height: auto;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -822,7 +907,7 @@ h5 i {
 }
 /* SAVE ENERGY  */
 .save {
-  height: fit-content;
+  height: auto;
   width: 70vw;
   display: flex;
   flex-direction: column;
@@ -890,7 +975,7 @@ h5 i {
 }
 /* LAWS */
 .laws {
-  height: fit-content;
+  height: auto;
   width: 100vw;
   display: flex;
   align-items: center;
